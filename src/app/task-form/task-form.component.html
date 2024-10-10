@@ -1,0 +1,9 @@
+<!-- <p>task-form works!</p> -->
+<div class="task-form">
+    <h2>{{ isEditing ? 'Edit Task' : 'Create Task' }}</h2>
+    <form (ngSubmit)="submitForm()">
+      <input type="text" [(ngModel)]="task.name" placeholder="Task name" required />
+      <button type="submit">{{ isEditing ? 'Update' : 'Add' }}</button>
+    </form>
+  </div>
+  
